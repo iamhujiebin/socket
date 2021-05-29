@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) {
         strcpy(buffer, "ok");
 
         if ((iret = send(clientfd, buffer, strlen(buffer), 0)) <= 0) {
-            perror("send fail");
+            printf("send fail:%d\n", iret);
             break;
         }
         printf("发送:%s\n", buffer);

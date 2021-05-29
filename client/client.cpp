@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
         sprintf(buffer, "报文%d", i);
 
         if ((iret = send(sockfd, buffer, strlen(buffer), 0)) <= 0) {
-            perror("send fail");
+            printf("send fail:%d\n", iret);
             break;
         }
         printf("发送：%s\n", buffer);
