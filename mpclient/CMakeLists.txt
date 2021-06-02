@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.8)
+
+include_directories(../)
+
+add_executable(
+        MPClient
+        mpclient.cpp
+)
+
+# 链接阶段
+target_link_libraries(MPClient FreeCPlus)

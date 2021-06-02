@@ -3,4 +3,6 @@ project("web")
 
 add_subdirectory("client")
 add_subdirectory("server")
+add_subdirectory("mpserver")
+add_subdirectory("mpclient")
 add_subdirectory("FreeCPlus")
