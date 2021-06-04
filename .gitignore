@@ -1,2 +1,16 @@
 cmake-build-debug
 .idea
+.DS_Store
+*.cmake
+*.make
+*.log
+*.o
+*CmakeFiles/
+client/Client
+*MakeFile
+server/Server
+mtserver/MTServer
+mpserver/MPServer
+mpclient/MPClient
+*.a
+CMakeCache.txt
