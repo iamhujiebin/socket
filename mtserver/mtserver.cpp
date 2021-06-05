@@ -70,7 +70,7 @@ void *pthmain(void *arg) {
                 logFile.Write("处理失败");
                 break;
             }
-            logFile.Write("发送：%s\n", strrecvbuffer);
+            logFile.Write("发送：%s\n", strsendbuffer);
             if (!TcpWrite(sockfd, strsendbuffer)) {
                 logFile.Write("发送失败\n", strrecvbuffer);
                 break;

@@ -83,15 +83,15 @@ bool biz002() {
         return false;
     }
     int iretcode = -1;
-    char *ye;
-    char *message;
+    char ye[1024];
+    char message[1024];
     GetXMLBuffer(strbuffer, "retcode", &iretcode);
     GetXMLBuffer(strbuffer, "ye", ye);
     GetXMLBuffer(strbuffer, "message", message);
     if (iretcode) {
-        printf("获取余额失败:%s", message);
+        printf("获取余额失败:%d,retMsg:%s\n",iretcode, message);
         return false;
     }
-    printf("获取余额成功:¥%s", ye);
+    printf("获取余额成功:¥%s\n", ye);
     return true;
 }
