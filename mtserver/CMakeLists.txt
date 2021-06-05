@@ -9,3 +9,4 @@ add_executable(
 
 # 链接阶段
 target_link_libraries(MTServer FreeCPlus)
+target_link_libraries(MTServer pthread)
