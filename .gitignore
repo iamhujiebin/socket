@@ -14,3 +14,5 @@ mpserver/MPServer
 mpclient/MPClient
 *.a
 CMakeCache.txt
+*CMakeFiles/
+*Makefile
