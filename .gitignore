@@ -16,3 +16,7 @@ mpclient/MPClient
 CMakeCache.txt
 *CMakeFiles/
 *Makefile
+epoll/EPOLL
+ioclient/IOClient
+poll/POLL
+select/Select

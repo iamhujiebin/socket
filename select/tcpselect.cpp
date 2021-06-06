@@ -3,6 +3,7 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 #include <sys/select.h>
+#include <string.h>
 
 // 初始化服务端的监听端口
 // @return 返回listen的sock
